@@ -32,12 +32,11 @@ Give ep_chassis.drive_speed to have a circular movement.
 ## Program:
 Developed by:  lakshmi mounika Register No: 212223100026
 ~~~
-from robomaster import time
+from robomaster import robot
 import time
 from robomaster import camera
 
-
-if __name__ == '__main__':
+if _name_ == '_main_':
     ep_robot = robot.Robot()
     ep_robot.initialize(conn_type="ap")
 
@@ -48,71 +47,67 @@ if __name__ == '__main__':
     print("Video streaming started.....")
     ep_camera.start_video_stream(display=True, resolution = camera.STREAM_360P)
 
-    ep_chassis.move(x=2.3, y=0, z=0, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=255,g=255,b=0,effect="on")
+    ep_chassis.move(x=2.64, y=0, z=0, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=128,g=0,b=0,effect="on")
 
-    ep_chassis.move(x=0.5, y=0, z=70,xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=255,g=255,b=255,effect="on")
-
-    ep_chassis.move(x=0.9, y=0, z=0, xy_speed=1.3).wait_for_completed()
+    ep_chassis.move(x=0.4, y=0, z=80, xy_speed=0.8).wait_for_completed()
     ep_led.set_led(comp = "all",r=255,g=0,b=0,effect="on")
 
-    ep_chassis.move(x=0, y=-1.4, z=0, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=0,g=255,b=0,effect="on")
+    ep_chassis.move(x=1, y=0, z=0, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=128,g=0,b=128,effect="on")
 
-    ep_chassis.move(x=0, y=0, z=95, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=0,g=0,b=255,effect="on")
-
-    ep_chassis.move(x=0.5, y=0, z=0, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=0,g=0,b=255,effect="on")
-
-    ep_chassis.move(x=0, y=0, z=-30, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=128,g=128,b=0,effect="on")
-
-    ep_chassis.move(x=1.1, y=0, z=0, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=153,g=51,b=102,effect="on")
-
-    ep_chassis.move(x=0, y=0, z=40, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=0,g=0,b=128,effect="on")
-
-    ep_chassis.move(x=1.3, y=0, z=0, xy_speed=1.3).wait_for_completed()
+    ep_chassis.move(x=0, y=-1.5, z=0, xy_speed=1.2).wait_for_completed()
     ep_led.set_led(comp = "all",r=255,g=0,b=255,effect="on")
 
-    ep_chassis.move(x=0, y=0, z=55, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=51,g=51,b=153,effect="on")
+    ep_chassis.move(x=0, y=0, z=63, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=128,g=0,b=128,effect="on")
 
-    ep_chassis.move(x=0.5, y=0, z=0, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=153,g=204,b=0,effect="on")
+    ep_chassis.move(x=1.6, y=0, z=0, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=0,g=0,b=225,effect="on")
 
-    ep_chassis.move(x=0, y=0, z=53, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=0,g=51,b=0,effect="on")
+    ep_chassis.move(x=0, y=0, z=40, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=128,g=0,b=128,effect="on")
 
-    ep_chassis.move(x=1.9, y=0, z=0, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=255,g=204,b=0,effect="on")
+    ep_chassis.move(x=1.35, y=0, z=0, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=0,g=255,b=0,effect="on")
 
-    ep_chassis.move(x=0, y=0, z=75, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=51,g=204,b=204,effect="on")
+    ep_chassis.move(x=0, y=0, z=90, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=0,g=0,b=128,effect="on") 
 
-    ep_chassis.move(x=0.4, y=0, z=0, xy_speed=1.3).wait_for_completed()
-    ep_led.set_led(comp = "all",r=51,g=51,b=51,effect="on")
+    ep_chassis.move(x=2, y=0, z=0, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=255,g=102,b=0,effect="on")
+
+    ep_chassis.move(x=0, y=0, z=80, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=51,g=51,b=51,effect="on")    
+
+    ep_chassis.move(x=0.6, y=0, z=0, xy_speed=1.0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=153,g=51,b=0,effect="on")    
+
+    ep_chassis.move(x=0, y=0, z=0, xy_speed=0).wait_for_completed()
+    ep_led.set_led(comp = "all",r=51,g=51,b=0,effect="on")   
+
     time.sleep(4)
     ep_camera.stop_video_stream()
     print("Stopped video streaming.....")
 
     ep_robot.close()
+    
+
+    
+
 
 ~~~
 
 
 
 ## MobileRobot Movement Image:
+![Screenshot 2023-12-17 131056](https://github.com/mounika2005/mobilerobot-openloopcontrol/assets/145633112/4e48f05d-abbb-43ad-bda5-82b6038d5673)
 
-![Screenshot 2023-12-17 130926](https://github.com/mounika2005/mobilerobot-openloopcontrol/assets/145633112/162e0486-22f6-430d-abdc-24047fc98e8e)
-![Screenshot 2023-12-17 131056](https://github.com/mounika2005/mobilerobot-openloopcontrol/assets/145633112/795c8b27-3299-4d27-ae64-4ecb5b0b3e6d)
+![WhatsApp Image 2023-12-26 at 16 15 22_83a863d9](https://github.com/mounika2005/mobilerobot-openloopcontrol/assets/145633112/7386d466-a582-41d6-9cab-7e21bc1493ae)
 
 ## MobileRobot Movement Video:
 
-https://youtube.com/shorts/-yiRJPEQ2dQ?si=0lcA9YOK8kYFdojC
+https://youtu.be/p4HoSFZrcbQ?si=J8HucPYXssL-1JnK
 
 Channel id: 
 https://www.youtube.com/@mounikareddy8920
